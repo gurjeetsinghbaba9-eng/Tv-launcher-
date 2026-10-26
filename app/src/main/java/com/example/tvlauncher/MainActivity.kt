@@ -96,4 +96,9 @@ fun AppCard(app: AppItem, onClick: (String) -> Unit) {
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(bitmap = app.icon, contentDescription = null, modifier = Modifier.size(72.dp)
+        //Image(bitmap = app.icon, contentDescription = null, modifier = Modifier.size(72.dp)
+        Image(bitmap = app.icon, contentDescription = null, modifier = Modifier.size(72.dp))
+        Spacer(Modifier.height(8.dp))
+        Text(app.label, color = Color.White, fontSize = 14.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)
+    }
+}
